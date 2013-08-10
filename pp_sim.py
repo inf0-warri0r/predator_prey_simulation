@@ -49,7 +49,7 @@ class rabbit:
                         if y - self.y < self.r:
                             n_point.append((x, y))
             else:
-                if x - self.x < r:
+                if x - self.x < self.r:
                     if self.y > y:
                         if self.y - y < self.r:
                             n_point.append((x, y))

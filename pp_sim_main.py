@@ -31,7 +31,7 @@ rabbit_multiply_rate = 0.5
 rabbit_max_speed = 5
 rabbit_range_of_vision = 50
 
-number_of_foxs = 20
+number_of_foxes = 20
 fox_multiply_rate = 0.5
 fox_max_speed = 7
 fox_max_steps = 25
@@ -49,7 +49,7 @@ for i in range(0, number_of_rabbits):
     r.append(pp_sim.rabbit(rabbit_max_speed, x, y, cw,
                             ch - 180, rabbit_range_of_vision))
 
-for i in range(0, number_of_foxs):
+for i in range(0, number_of_foxes):
     x = random.uniform(0, cw)
     y = random.uniform(0, ch - 180)
     f.append(pp_sim.fox(fox_max_speed, fox_max_steps, x, y, cw, ch - 180))
