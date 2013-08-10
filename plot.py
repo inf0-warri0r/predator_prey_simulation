@@ -1,8 +1,8 @@
 """
 Author : tharindra galahena (inf0_warri0r)
-Project: predator-prey simulation
+Project: predator - prey simulation
 Blog   : http://www.inf0warri0r.blogspot.com
-Date   : 03/08/2013
+Date   : 10/08/2013
 License:
 
      Copyright 2013 Tharindra Galahena

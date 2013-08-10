@@ -1,8 +1,8 @@
 """
 Author : tharindra galahena (inf0_warri0r)
-Project: predator-prey simulation
+Project: predator - prey simulation
 Blog   : http://www.inf0warri0r.blogspot.com
-Date   : 03/08/2013
+Date   : 10/08/2013
 License:
 
      Copyright 2013 Tharindra Galahena
@@ -100,7 +100,6 @@ while 1:
     r = tmp[:]
     f = tmp_f[:]
     if gn > 25:
-        print len(r), " - ", len(f)
         pl.add1(len(r))
         pl.add2(len(f))
         for i in range(0, int(len(r) * rabbit_multiply_rate) + 1):
@@ -120,14 +119,14 @@ while 1:
     for x in range(0, pl.pointer2 - 2):
         y1 = 150 - pl.nlst1[x] + ch - 170
         y2 = 150 - pl.nlst1[x + 1] + ch - 170
-        chart_1.create_line(x * 6, y1,
+        chart_1.create_line(x * (cw / 100), y1,
                             (x + 1) * 6, y2,
                             fill='red')
 
         y1 = 150 - pl.nlst2[x] + ch - 170
         y2 = 150 - pl.nlst2[x + 1] + ch - 170
         chart_1.create_line(x * 6, y1,
-                            (x + 1) * 6, y2,
+                            (x + 1) * (cw / 100), y2,
                             fill='blue')
 
     chart_1.update()
